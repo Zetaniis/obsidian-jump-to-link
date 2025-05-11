@@ -2,7 +2,7 @@ import {LinkHintType, PreviewLinkHint} from "../../types";
 import {getLinkHintLetters} from "./common";
 
 export function getPreviewLinkHints(previewViewEl: HTMLElement, letters: string ): PreviewLinkHint[] {
-    const anchorEls = previewViewEl.querySelectorAll('a, .metadata-link-inner');
+    const anchorEls = previewViewEl.querySelectorAll('a, .metadata-link-inner, .multi-select-pill-content');
     const embedEls = previewViewEl.querySelectorAll('.internal-embed');
 
     const linkHints: PreviewLinkHint[] = [];
